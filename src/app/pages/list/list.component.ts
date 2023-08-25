@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {Geo, Address, Company, User, UserTable} from "../services/interfaces";
-import { UserService } from "../services/user.service";
+import {Geo, Address, Company, User, UserTable} from "../../services/interfaces";
+import { UserService } from "../../services/user.service";
 
 @Component({
   selector: 'app-list',
