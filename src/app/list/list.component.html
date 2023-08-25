@@ -1,9 +1,13 @@
 <mat-toolbar>
 	<span>Contacts</span>
+	<span class="example-spacer"></span>
+	<button mat-icon-button>
+      <mat-icon>information</mat-icon>
+    </button>
 </mat-toolbar>
 
 <div class="list-container">
-	<table mat-table [dataSource]="users" class="mat-elevation-z8">
+	<table mat-table [dataSource]="users">
 
 	  <!-- ID Column -->
 	  <ng-container matColumnDef="id">

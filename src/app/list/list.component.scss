@@ -4,11 +4,15 @@ mat-toolbar {
 }
 
 .list-container {
-  margin: 0 16px;
+  margin: auto;
   padding-top: 32px;
-  padding-bottom: 8px;
+  width: 80%;
 }
 
 table {
-	width: auto;
+	border: 1px solid grey;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
 }
