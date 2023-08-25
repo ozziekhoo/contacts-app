@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { adaptUser } from "../adaptors/user-adaptor";
+import { adaptUserTable } from "../adaptors/user-adaptor";
 import {map} from "rxjs/operators";
-import { rxUser, UserList } from "./interfaces";
+import { RxUser, UserTableList } from "./interfaces";
 import {Observable} from "rxjs";
 
 
@@ -12,10 +12,10 @@ import {Observable} from "rxjs";
 export class UserService {
   constructor(private httpClient: HttpClient) { }
 
-  getUsers(): Observable<UserList> {
+  getUsers(): Observable<UserTableList> {
     return this.httpClient.get('http://jsonplaceholder.typicode.com/users').pipe(
       map((res) => {
-        const users = adaptUser(<rxUser[]>res);
+        const users = adaptUserTable(<RxUser[]>res);
         return {
           users,
         }

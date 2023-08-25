@@ -28,12 +28,12 @@ export interface User {
   company: Company,
 }
 
-export interface rxGeo {
+export interface RxGeo {
   lat: string,
   lng: string,
 }
 
-export interface rxAddress {
+export interface RxAddress {
   street: string,
   suite: string,
   city: string,
@@ -41,13 +41,13 @@ export interface rxAddress {
   geo: Geo,
 }
 
-export interface rxCompany {
+export interface RxCompany {
   name: string,
   catchPhrase: string,
   bs: string,
 }
 
-export interface rxUser {
+export interface RxUser {
   id: number,
   name: string,
   username: string,
@@ -62,3 +62,17 @@ export interface UserList {
   users: User[],
 }
 
+export interface UserTable {
+  id: number,
+  name: string,
+  username: string,
+  email: string,
+  address: string,
+  phone: string,
+  website: string,
+  company: string,
+}
+
+export interface UserTableList {
+  users: UserTable[],
+}

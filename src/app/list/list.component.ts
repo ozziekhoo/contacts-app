@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Geo, Address, Company, User} from "../services/interfaces";
+import {Geo, Address, Company, User, UserTable} from "../services/interfaces";
 import { UserService } from "../services/user.service";
 
 @Component({
@@ -8,7 +8,10 @@ import { UserService } from "../services/user.service";
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
-  users: User[] = [];
+  users: UserTable[] = [];
+  displayedColumns: string[] = [
+    'id', 'name', 'username', 'email', 'address', 'phone', 'website', 'company'
+  ];
 
   constructor(private userService: UserService) {}
 

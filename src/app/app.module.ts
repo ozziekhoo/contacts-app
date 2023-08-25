@@ -21,7 +21,8 @@ import { HttpClientModule } from "@angular/common/http";
     AppRoutingModule,
     MatToolbarModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    MatTableModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
